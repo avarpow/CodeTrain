@@ -15,11 +15,11 @@
 #include <set>
 
 using namespace std;
-#define N 1000006
-char s[N], p[N];
-int nxt[N];
+#define N 16
 int main()
 {
+    char s[N], p[N];
+    int nxt[N];
     cin >> s + 1;
     cin >> p + 1;
     int lens = strlen(s + 1);
