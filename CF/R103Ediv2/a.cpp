@@ -9,13 +9,33 @@
 #define Please return
 #define AC 0
 // #define yn
-#define mycout cout
 using namespace std;
 void solve()
 {
-    int n, flag = 0;
-    cin >> n;
-
+    int n, k, flag = 0;
+    cin >> n >> k;
+    if (n <= k)
+    {
+        if (k % n == 0)
+        {
+            cout << k / n << endl;
+        }
+        else
+        {
+            cout << k / n + 1 << endl;
+        }
+    }
+    else
+    {
+        if (n % k == 0)
+        {
+            cout << 1 << endl;
+        }
+        else
+        {
+            cout << 2 << endl;
+        }
+    }
 #ifdef yn
     if (flag)
     {
