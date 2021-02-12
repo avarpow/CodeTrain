@@ -14,8 +14,16 @@
 using namespace std;
 void solve()
 {
-    int n, flag = 0;
-    cin >> n;
+    int x, y;
+    cin >> x >> y;
+    long long ans = 0;
+    int k = 1;
+    while (y - k > 0 && x / k - k - 1 > 0)
+    {
+        ans += min(y - k, x / k - k - 1);
+        k++;
+    }
+    cout << ans << endl;
 
 #ifdef yn
     if (flag)
